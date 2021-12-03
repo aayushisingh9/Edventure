@@ -1,0 +1,49 @@
+<html>
+<head>
+  <title>Admin Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="styleadmin.css" />
+</head>
+<body>
+
+  <div id="login_div" class="main-div" >
+    <h3>&nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbspAdmin Panel</h3>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+
+    <button onclick="login()">Login to Account</button>
+  </div>
+  <div class="container">
+          <a href="index.html" class="logo float-left tran4s"><img src="logo.png" alt="Logo"></a>
+  </div>
+  <style>
+    body {
+      background-image: url('bck.png');
+    }
+</style>
+
+  <div id="user_div" class="loggedin-div">
+    <a href="adminindex.html">Welcome User</a>
+    <p id="user_para">Welcome to Admin Portal. You're currently logged in.</p>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+const firebaseConfig = {
+  apiKey: "AIzaSyAjP4nWcbGcdhCyyp_OyqwPwsLJg2v9iFM",
+  authDomain: "edventures-45a10.firebaseapp.com",
+  projectId: "edventures-45a10",
+  storageBucket: "edventures-45a10.appspot.com",
+  messagingSenderId: "373449638273",
+  appId: "1:373449638273:web:d65e3ae583e3882db86880",
+  measurementId: "G-4KCMRW5GN8"
+};
+
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="index (2).js"></script>
+
+</body>
+</html>
